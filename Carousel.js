@@ -35,7 +35,7 @@ const ProductCarousel = ({ children, numberOfElementsToShow=[1,3,5] }) => {
     setCounter(counter+1)*/
 
     const originalContent=[...carouselContent]
-    originalContent.push(carouselContent[counter])
+    originalContent.push(carouselContent[0])
     originalContent.splice(0,1)
     setCarouselCotent(originalContent)
     return originalContent
